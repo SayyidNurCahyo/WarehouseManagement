@@ -1,3 +1,7 @@
+using WarehouseManagement.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System;
+
 namespace WarehouseManagement
 {
     public class Program
@@ -6,8 +10,11 @@ namespace WarehouseManagement
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
