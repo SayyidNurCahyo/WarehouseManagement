@@ -3,6 +3,7 @@ using WarehouseManagement.Repositories;
 using WarehouseManagement.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WarehouseManagement.Dto.Request;
 
 namespace WarehouseManagement.Controllers
 {
@@ -17,13 +18,13 @@ namespace WarehouseManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateNewGudang([FromBody] Gudang payload)
+        public async Task<IActionResult> CreateNewGudang([FromBody] CreateGudangRequest payload)
         {
             var gudang = await _gudangService.Create(payload);
             return Created("/api/gudang", gudang);
         }
         [HttpPut]
-        public async Task<IActionResult> UpdateGudang([FromBody] Gudang payload)
+        public async Task<IActionResult> UpdateGudang([FromBody] UpdateGudangRequest payload)
         {
             var gudang = await _gudangService.Update(payload);
             return Ok(gudang);
@@ -33,6 +34,12 @@ namespace WarehouseManagement.Controllers
         {
             await _gudangService.DeleteById(id);
             return Ok();
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetGudangById(string id)
+        {
+            var gudang = await _gudangService.GetById(id);
+            return Ok(gudang);
         }
         [HttpGet]
         public async Task<IActionResult> GetAllGudang()

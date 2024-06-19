@@ -1,8 +1,8 @@
-﻿using WarehouseManagement.Entities;
-using WarehouseManagement.Repositories;
+﻿using WarehouseManagement.Repositories;
 using WarehouseManagement.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WarehouseManagement.Dto.Request;
 
 namespace WarehouseManagement.Controllers
 {
@@ -17,13 +17,13 @@ namespace WarehouseManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateNewBarang([FromBody] Barang payload)
+        public async Task<IActionResult> CreateNewBarang([FromBody] CreateBarangRequest payload)
         {
             var barang = await _barangService.Create(payload);
             return Created("/api/barang", barang);
         }
         [HttpPut]
-        public async Task<IActionResult> UpdateBarang([FromBody] Barang payload)
+        public async Task<IActionResult> UpdateBarang([FromBody] UpdateBarangRequest payload)
         {
             var barang = await _barangService.Update(payload);
             return Ok(barang);
@@ -33,6 +33,13 @@ namespace WarehouseManagement.Controllers
         {
             await _barangService.DeleteById(id);
             return Ok();
+        }
+        [HttpGet("{id}")]
+
+        public async Task<IActionResult> GetBarangById(string id)
+        {
+            var barang = await _barangService.GetById(id);
+            return Ok(barang);
         }
         [HttpGet]
         public async Task<IActionResult> GetAllBarang()

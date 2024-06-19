@@ -1,13 +1,15 @@
-﻿using WarehouseManagement.Entities;
+﻿using WarehouseManagement.Dto.Request;
+using WarehouseManagement.Dto.Response;
+using WarehouseManagement.Entities;
 
 namespace WarehouseManagement.Services
 {
     public interface IBarangService
     {
-        Task<Barang> Create(Barang payload);
-        Task<Barang> GetById(string id);
-        Task<List<Barang>> GetAll();
-        Task<Barang> Update(Barang payload);
+        Task<BarangResponse> Create(CreateBarangRequest payload);
+        Task<BarangResponse> GetById(string id);
+        Task<List<BarangResponse>> GetAll();
+        Task<BarangResponse> Update(UpdateBarangRequest payload);
         Task DeleteById(string id);
     }
 }

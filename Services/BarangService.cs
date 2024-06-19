@@ -1,6 +1,9 @@
 ﻿using WarehouseManagement.Entities;
 using WarehouseManagement.Repositories;
 using Microsoft.AspNetCore.Http.HttpResults;
+using WarehouseManagement.Dto.Response;
+using WarehouseManagement.Dto.Request;
+using WarehouseManagement.Mapper;
 
 namespace WarehouseManagement.Services
 {
@@ -8,49 +11,59 @@ namespace WarehouseManagement.Services
     {
         private readonly IRepository<Barang> _repository;
         private readonly IPersistence _persistence;
-        public BarangService(IRepository<Barang> repository, IPersistence persistence)
+        private readonly IGudangService _gudangService;
+        public BarangService(IRepository<Barang> repository, IPersistence persistence, IGudangService gudangService)
         {
             _repository = repository;
             _persistence = persistence;
+            _gudangService = gudangService;
         }
 
-        public async Task<Barang> Create(Barang payload)
+        public async Task<BarangResponse> Create(CreateBarangRequest payload)
         {
-            var barang = await _repository.SaveAsync(payload);
+            var request = payload.ToBarangFromCreateRequest();
+            await _gudangService.GetById(request.GudangKode.ToString());
+            var barang = await _repository.SaveAsync(request);
             await _persistence.SaveChangesAsync();
-            return barang;
+            return barang.ToBarangResponse();
         }
 
         public async Task DeleteById(string id)
         {
-            var barang = await GetById(id);
+            var barang = await _repository.FindByIdAsync(Guid.Parse(id));
+            if (barang is null) throw new Exception("Barang tidak ditemukan");
             _repository.Delete(barang);
             await _persistence.SaveChangesAsync();
         }
 
-        public async Task<List<Barang>> GetAll()
+        public async Task<List<BarangResponse>> GetAll()
         {
-            return await _repository.FindAllAsync();
+            var barang = await _repository.FindAllAsync();
+            var response = barang.Select(g => g.ToBarangResponse()).ToList();
+            return response;
         }
 
-        public async Task<Barang> GetById(string id)
+        public async Task<BarangResponse> GetById(string id)
         {
             try
             {
                 var barang = await _repository.FindByIdAsync(Guid.Parse(id));
                 if (barang is null) throw new Exception("Barang tidak ditemukan");
-                return barang;
-            }catch (Exception ex)
+                return barang.ToBarangResponse();
+            }
+            catch (Exception ex)
             {
                 throw new Exception("id harus berupa UUID");
             }
         }
 
-        public async Task<Barang> Update(Barang payload)
+        public async Task<BarangResponse> Update(UpdateBarangRequest payload)
         {
-            var barang = _repository.Update(payload);
+            var request = payload.ToBarangFromUpdateRequest();
+            await _gudangService.GetById(request.GudangKode.ToString());
+            var barang = _repository.Update(request);
             await _persistence.SaveChangesAsync();
-            return barang;
+            return barang.ToBarangResponse();
         }
     }
 }

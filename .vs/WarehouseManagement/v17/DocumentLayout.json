@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\controllers\\gudangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:controllers\\gudangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\controllers\\barangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:controllers\\barangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\entities\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:entities\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\services\\barangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:services\\barangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\services\\igudangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:services\\igudangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\mapper\\barangmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:mapper\\barangmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\dto\\response\\barangresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:dto\\response\\barangresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\repositories\\ipersistence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:repositories\\ipersistence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\services\\gudangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:services\\gudangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\controllers\\gudangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:controllers\\gudangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\warehousemanagement.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:warehousemanagement.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\services\\ibarangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:services\\ibarangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|c:\\users\\lenovo\\net\\warehousemanagement\\controllers\\barangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13902A93-5F7A-4C30-AC43-231C46CCD95E}|WarehouseManagement.csproj|solutionrelative:controllers\\barangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +62,166 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Barang.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Entities\\Barang.cs",
+              "RelativeDocumentMoniker": "Entities\\Barang.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Entities\\Barang.cs",
+              "RelativeToolTip": "Entities\\Barang.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T16:01:31.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BarangResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Dto\\Response\\BarangResponse.cs",
+              "RelativeDocumentMoniker": "Dto\\Response\\BarangResponse.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Dto\\Response\\BarangResponse.cs",
+              "RelativeToolTip": "Dto\\Response\\BarangResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:33:09.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BarangMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Mapper\\BarangMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\BarangMapper.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Mapper\\BarangMapper.cs",
+              "RelativeToolTip": "Mapper\\BarangMapper.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwCsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:25:50Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:34:41.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BarangService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\BarangService.cs",
               "RelativeDocumentMoniker": "Services\\BarangService.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\BarangService.cs",
               "RelativeToolTip": "Services\\BarangService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T12:58:42.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BarangController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Controllers\\BarangController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BarangController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Controllers\\BarangController.cs",
-              "RelativeToolTip": "Controllers\\BarangController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAA8wCwAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "IPersistence.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Repositories\\IPersistence.cs",
+              "RelativeDocumentMoniker": "Repositories\\IPersistence.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Repositories\\IPersistence.cs",
+              "RelativeToolTip": "Repositories\\IPersistence.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:35:47.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T15:05:50.003Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "GudangService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\GudangService.cs",
+              "RelativeDocumentMoniker": "Services\\GudangService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\GudangService.cs",
+              "RelativeToolTip": "Services\\GudangService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAuwD0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T13:29:34.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "GudangController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Controllers\\GudangController.cs",
               "RelativeDocumentMoniker": "Controllers\\GudangController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Controllers\\GudangController.cs",
               "RelativeToolTip": "Controllers\\GudangController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:35:14.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T14:49:52.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IGudangService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\IGudangService.cs",
-              "RelativeDocumentMoniker": "Services\\IGudangService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\IGudangService.cs",
-              "RelativeToolTip": "Services\\IGudangService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:34:41.601Z",
-              "EditorCaption": ""
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-19T14:40:06.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-19T14:42:45.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WarehouseManagement",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\WarehouseManagement.csproj",
+              "RelativeDocumentMoniker": "WarehouseManagement.csproj",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\WarehouseManagement.csproj",
+              "RelativeToolTip": "WarehouseManagement.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T14:40:02.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BarangController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Controllers\\BarangController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BarangController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Controllers\\BarangController.cs",
+              "RelativeToolTip": "Controllers\\BarangController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T13:26:09.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IBarangService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\IBarangService.cs",
               "RelativeDocumentMoniker": "Services\\IBarangService.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Services\\IBarangService.cs",
               "RelativeToolTip": "Services\\IBarangService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:34:36.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Net\\WarehouseManagement\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T11:34:41.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:34:36.766Z"
             }
           ]
         }

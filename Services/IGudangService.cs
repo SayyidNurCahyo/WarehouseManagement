@@ -1,13 +1,15 @@
-﻿using WarehouseManagement.Entities;
+﻿using WarehouseManagement.Dto.Request;
+using WarehouseManagement.Dto.Response;
+using WarehouseManagement.Entities;
 
 namespace WarehouseManagement.Services
 {
     public interface IGudangService
     {
-        Task<Gudang> Create(Gudang payload);
-        Task<Gudang> GetById(string id);
-        Task<List<Gudang>> GetAll();
-        Task<Gudang> Update(Gudang payload);
+        Task<GudangResponse> Create(CreateGudangRequest payload);
+        Task<GudangResponse> GetById(string id);
+        Task<List<GudangResponse>> GetAll();
+        Task<GudangResponse> Update(UpdateGudangRequest payload);
         Task DeleteById(string id);
     }
 }

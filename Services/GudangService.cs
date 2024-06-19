@@ -1,6 +1,9 @@
 ﻿using WarehouseManagement.Entities;
 using WarehouseManagement.Repositories;
 using Microsoft.AspNetCore.Http.HttpResults;
+using WarehouseManagement.Dto.Response;
+using WarehouseManagement.Dto.Request;
+using WarehouseManagement.Mapper;
 
 namespace WarehouseManagement.Services
 {
@@ -14,43 +17,49 @@ namespace WarehouseManagement.Services
             _persistence = persistence;
         }
 
-        public async Task<Gudang> Create(Gudang payload)
+        public async Task<GudangResponse> Create(CreateGudangRequest payload)
         {
-            var gudang = await _repository.SaveAsync(payload);
+            var request = payload.ToGudangFromCreateRequest();
+            var gudang = await _repository.SaveAsync(request);
             await _persistence.SaveChangesAsync();
-            return gudang;
+            return gudang.ToGudangResponse();
         }
 
         public async Task DeleteById(string id)
         {
-            var gudang = await GetById(id);
+            var gudang = await _repository.FindByIdAsync(Guid.Parse(id));
+            if (gudang is null) throw new Exception("Gudang tidak ditemukan");
             _repository.Delete(gudang);
             await _persistence.SaveChangesAsync();
         }
 
-        public async Task<List<Gudang>> GetAll()
+        public async Task<List<GudangResponse>> GetAll()
         {
-            return await _repository.FindAllAsync();
+            var gudang = await _repository.FindAllAsync();
+            var response = gudang.Select(g => g.ToGudangResponse()).ToList();
+            return response;
         }
 
-        public async Task<Gudang> GetById(string id)
+        public async Task<GudangResponse> GetById(string id)
         {
             try
             {
                 var gudang = await _repository.FindByIdAsync(Guid.Parse(id));
                 if (gudang is null) throw new Exception("Gudang tidak ditemukan");
-                return gudang;
-            }catch (Exception ex)
+                return gudang.ToGudangResponse();
+            }
+            catch (Exception ex)
             {
                 throw new Exception("id harus berupa UUID");
             }
         }
 
-        public async Task<Gudang> Update(Gudang payload)
+        public async Task<GudangResponse> Update(UpdateGudangRequest payload)
         {
-            var gudang = _repository.Update(payload);
+            var request = payload.ToGudangFromUpdateRequest();
+            var gudang = _repository.Update(request);
             await _persistence.SaveChangesAsync();
-            return gudang;
+            return gudang.ToGudangResponse();
         }
     }
 }
